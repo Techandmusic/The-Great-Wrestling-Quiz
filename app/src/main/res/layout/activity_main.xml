@@ -212,6 +212,135 @@
 
         </LinearLayout>
 
+        <!--Fifth question and answers -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small"
+            android:padding="@dimen/xsmall"
+            android:text="@string/Question_5"
+            android:textSize="@dimen/body" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginLeft="@dimen/small"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_5_firstAnswer" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_5_secondAnswer" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_5_thirdAnswer" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_5_fourthAnswer" />
+
+        </RadioGroup>
+
+        <!--Sixth question and answers -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small"
+            android:padding="@dimen/xsmall"
+            android:text="@string/Question_6"
+            android:textSize="@dimen/body" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginLeft="@dimen/small"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_6_firstAnswer" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_6_secondAnswer" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_6_thirdAnswer" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/Question_6_fourthAnswer" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsmall"
+            android:text="@string/Question_7_a"
+            android:textSize="@dimen/body"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:layout_width="@dimen/xxl"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body"
+                android:text="@string/Question_7_b"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/medium"
+            android:layout_marginBottom="@dimen/small"
+            android:text="@string/buttonText"
+            android:background="@color/buttonColor"/>
+
 
     </LinearLayout>
 

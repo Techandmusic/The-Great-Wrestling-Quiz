@@ -53,7 +53,9 @@
 
     <!--Seventh question in two parts for fill in the blank -->
 
-    <string name="Question_7_a">Superstar Terry Bollea wrestled under the name</string>
-    <string name="Question_7_b">Hogan</string>
+    <string name="Question_7_a">7. Superstar Terry Bollea wrestled under the name</string>
+    <string name="Question_7_b">Hogan?</string>
+
+    <string name="buttonText">Submit</string>
 
 </resources>
