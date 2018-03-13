@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">The Great Wrestling Quiz</string>
+
+    <!--First question with answers -->
+
+    <string name="Question_1">1. Which of the following are championship titles of the WWE Smackdown brand? (check all that apply)</string>
+    <string name="Question_1_firstAnswer">WWE Championship</string>
+    <string name="Question_1_secondAnswer">WWE Smackdown Women’s Championship</string>
+    <string name="Question_1_thirdAnswer">WWE Smackdown Tag Team Championship</string>
+    <string name="Question_1_fourthAnswer">WWE United States Championship</string>
+    <string name="Question_1_fifthAnswer">WWE TV Title</string>
+    <string name="Question_1_sixthAnswer">WWE Light Heavyweight Championship</string>
+
+    <!--Second question with answers -->
+
+    <string name="Question_2">2. Which WWE wrestler’s ring name combines the names of an Irish folk hero, and has evil arch nemesis?</string>
+    <string name="Question_2_firstAnswer">Seth Rollins</string>
+    <string name="Question_2_secondAnswer">Becky Lynch</string>
+    <string name="Question_2_thirdAnswer">Finn Balor</string>
+    <string name="Question_2_fourthAnswer">Brock Lesnar</string>
+
+    <!--Third question with answers -->
+
+    <string name="Question_3">3. Which of the following wrestlers went on to have a successful political career?</string>
+    <string name="Question_3_firstAnswer">Ted DiBiase</string>
+    <string name="Question_3_secondAnswer">Jesse Ventura</string>
+    <string name="Question_3_thirdAnswer">Ron Simmons</string>
+    <string name="Question_3_fourthAnswer">Mick Foley</string>
+
+    <!--Fourth question with answers -->
+
+    <string name="Question_4">4. Which two wrestlers have been world heavyweight champions 17 times?</string>
+    <string name="Question_4_firstAnswer">John Cena</string>
+    <string name="Question_4_secondAnswer">Stone Cold Steve Austin</string>
+    <string name="Question_4_thirdAnswer">Triple H</string>
+    <string name="Question_4_fourthAnswer">Ric Flair</string>
+
+    <!--Fifth question with answers -->
+
+    <string name="Question_5">5. Where was Andre The Giant born?</string>
+    <string name="Question_5_firstAnswer">Chicago Illinois</string>
+    <string name="Question_5_secondAnswer">Hamburg Germany</string>
+    <string name="Question_5_thirdAnswer">Coulommiers Seine-et-Marne France</string>
+    <string name="Question_5_fourthAnswer">Columbus Ohio</string>
+
+    <!--Sixth question with answers -->
+
+    <string name="Question_6">6. Which WWE pay-per-view event is referred to as “The grandest stage of them all”?</string>
+    <string name="Question_6_firstAnswer">Survivor Series</string>
+    <string name="Question_6_secondAnswer">Summer Slam</string>
+    <string name="Question_6_thirdAnswer">The Royal Rumble</string>
+    <string name="Question_6_fourthAnswer">WrestleMania</string>
+
+    <!--Seventh question in two parts for fill in the blank -->
+
+    <string name="Question_7_a">Superstar Terry Bollea wrestled under the name</string>
+    <string name="Question_7_b">Hogan</string>
+
+</resources>
