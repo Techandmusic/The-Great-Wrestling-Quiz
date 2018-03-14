@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.thegreatwrestlingquiz.MainActivity">
 
+
     <!--First child layout -->
 
     <LinearLayout
@@ -13,7 +14,10 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/medium"
         android:layout_marginRight="@dimen/medium"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/brickwallbackground">
+
+
 
         <!--App Title TextView -->
         <TextView
@@ -25,6 +29,11 @@
             android:text="@string/app_name"
             android:textSize="@dimen/heading"
             android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
 
         <!--First question and answers -->
         <TextView
@@ -80,6 +89,11 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
+
         <!--Second question and answers -->
 
         <TextView
@@ -123,6 +137,11 @@
 
 
         </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
 
         <!--Third question and answers -->
 
@@ -168,6 +187,11 @@
 
         </RadioGroup>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
+
         <!--Fourth question and answers -->
 
 
@@ -212,6 +236,11 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
+
         <!--Fifth question and answers -->
 
         <TextView
@@ -255,6 +284,11 @@
 
         </RadioGroup>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
+
         <!--Sixth question and answers -->
 
         <TextView
@@ -266,38 +300,43 @@
             android:textSize="@dimen/body" />
 
 
-        <LinearLayout
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/medium"
             android:layout_marginLeft="@dimen/small"
             android:orientation="vertical">
 
-            <CheckBox
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/xsmall"
                 android:text="@string/Question_6_firstAnswer" />
 
-            <CheckBox
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/xsmall"
                 android:text="@string/Question_6_secondAnswer" />
 
-            <CheckBox
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/xsmall"
                 android:text="@string/Question_6_thirdAnswer" />
 
-            <CheckBox
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/xsmall"
                 android:text="@string/Question_6_fourthAnswer" />
 
-        </LinearLayout>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -311,7 +350,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/small">
 
 
 
@@ -328,6 +368,11 @@
 
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/silverGrey"/>
 
 
 
