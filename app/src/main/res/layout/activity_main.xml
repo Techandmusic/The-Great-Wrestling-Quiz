@@ -28,7 +28,8 @@
             android:padding="@dimen/xsmall"
             android:text="@string/app_name"
             android:textSize="@dimen/heading"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
 
         <View
             android:layout_width="match_parent"
@@ -42,7 +43,8 @@
             android:layout_marginBottom="@dimen/xsmall"
             android:padding="@dimen/xsmall"
             android:text="@string/Question_1"
-            android:textSize="@dimen/body" />
+            android:textSize="@dimen/body"
+            android:fontFamily="sans-serif-medium"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -102,7 +104,8 @@
             android:layout_marginBottom="@dimen/small"
             android:padding="@dimen/xsmall"
             android:text="@string/Question_2"
-            android:textSize="@dimen/body" />
+            android:textSize="@dimen/body"
+            android:fontFamily="sans-serif-medium"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -151,7 +154,8 @@
             android:layout_marginBottom="@dimen/small"
             android:padding="@dimen/xsmall"
             android:text="@string/Question_3"
-            android:textSize="@dimen/body" />
+            android:textSize="@dimen/body"
+            android:fontFamily="sans-serif-medium"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -201,7 +205,8 @@
             android:layout_marginBottom="@dimen/small"
             android:padding="@dimen/xsmall"
             android:text="@string/Question_4"
-            android:textSize="@dimen/body" />
+            android:textSize="@dimen/body"
+            android:fontFamily="sans-serif-medium"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -249,7 +254,8 @@
             android:layout_marginBottom="@dimen/small"
             android:padding="@dimen/xsmall"
             android:text="@string/Question_5"
-            android:textSize="@dimen/body" />
+            android:textSize="@dimen/body"
+            android:fontFamily="sans-serif-medium"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -297,7 +303,8 @@
             android:layout_marginBottom="@dimen/small"
             android:padding="@dimen/xsmall"
             android:text="@string/Question_6"
-            android:textSize="@dimen/body" />
+            android:textSize="@dimen/body"
+            android:fontFamily="sans-serif-medium"/>
 
 
         <RadioGroup
@@ -338,12 +345,15 @@
             android:layout_height="@dimen/line"
             android:background="@color/silverGrey"/>
 
+        <!--Seventh Question and Answers -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/xsmall"
             android:text="@string/Question_7_a"
-            android:textSize="@dimen/body"/>
+            android:textSize="@dimen/body"
+            android:fontFamily="sans-serif-medium"/>
 
 
 
@@ -364,7 +374,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/body"
-                android:text="@string/Question_7_b"/>
+                android:text="@string/Question_7_b"
+                android:fontFamily="sans-serif-medium"/>
 
 
         </LinearLayout>
