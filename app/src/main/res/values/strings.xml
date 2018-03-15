@@ -55,7 +55,7 @@
 
     <string name="Question_7_a">7. Superstar Terry Bollea wrestled under the name</string>
     <string name="Question_7_b">Hogan?</string>
-
     <string name="buttonText">Submit</string>
+    <string name="hintText">Type Answer</string>
 
 </resources>
