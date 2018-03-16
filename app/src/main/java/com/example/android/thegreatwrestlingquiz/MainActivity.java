@@ -1,22 +1,31 @@
 package com.example.android.thegreatwrestlingquiz;
 
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.View;
-        import android.widget.CheckBox;
-        import android.widget.EditText;
-        import android.widget.RadioButton;
-        import android.widget.RadioGroup;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*int to keep track of correct answers*/
     int correctAnswers = 0;
+
+
+
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
 
     public void increment(View view) {
@@ -25,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void decrement(View view) {
         correctAnswers -= 1;
+        if (correctAnswers < 0) {
+            correctAnswers = 0;
+        }
     }
 
     /*Method to validate answers for question 1*/
@@ -136,16 +148,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void question7Validate(View view) {
         EditText editor = (EditText) findViewById(R.id.Question_7_textInput);
-        String answer = editor.toString();
-        if (answer == "Hulk") {
+        String answer = editor.getText().toString();
+        if (answer.equals("Hulk")) {
             increment(view);
-        } else if (answer == "hulk") {
+        } else if (answer.equals("hulk")) {
             increment(view);
         } else {
             decrement(view);
         }
 
     }
+
+
 
 
 
@@ -161,6 +175,10 @@ public class MainActivity extends AppCompatActivity {
         question5Validate(view);
         question6Validate(view);
         question7Validate(view);
+        Toast.makeText(this, "You got " + correctAnswers + " answers correct!", Toast.LENGTH_SHORT).show();
 
     }
+
+    //TODO Add ranker method that gives player a rnk based on nuber of corret answers
+    //TODO Possibly move all view variable declarations above onCreate with initializaions inside onCreate
 }
