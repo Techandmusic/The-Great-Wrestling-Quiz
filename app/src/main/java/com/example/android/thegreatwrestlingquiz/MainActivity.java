@@ -15,11 +15,6 @@ public class MainActivity extends AppCompatActivity {
     int correctAnswers = 0;
 
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -175,10 +170,35 @@ public class MainActivity extends AppCompatActivity {
         question5Validate(view);
         question6Validate(view);
         question7Validate(view);
-        Toast.makeText(this, "You got " + correctAnswers + " answers correct!", Toast.LENGTH_SHORT).show();
+        endMessage(ranker(correctAnswers));
 
     }
 
-    //TODO Add ranker method that gives player a rnk based on nuber of corret answers
+    /*Method to give player a rank based on number of correct answers
+    * @rank is initialized to empty string and set according to score*/
+
+    public String ranker(int score) {
+        String rank = "";
+
+        if (score == 11) {
+            rank = "Ring Legend";
+        } else if (score <= 10 && score >= 8) {
+            rank = "Heavyweight Champion";
+        } else if (score <= 7 && score >= 5) {
+            rank = "Mid Card Talent";
+        } else {
+            rank = "Jobber";
+        }
+
+        return rank;
+    }
+
+    /*Method to print out toast message with score and rank at end of quiz*/
+
+    public void endMessage(String rank) {
+        String message = "You got " + correctAnswers + " answers correct! ";
+        message += "Your rank is: " + rank;
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
     //TODO Possibly move all view variable declarations above onCreate with initializaions inside onCreate
 }
