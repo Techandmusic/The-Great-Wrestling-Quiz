@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     int correctAnswers = 0;
 
 
+    //View variables for each question
+
     CheckBox checkBox1_1;
     CheckBox checkBox1_2;
     CheckBox checkBox1_3;
@@ -178,6 +180,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*Method to validate answers for question 4*/
+
     public void question4Validate(View view) {
         if (checkBox4_1.isChecked()) {
             increment(view);
@@ -195,6 +199,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*Method to validate answers for question 5*/
+
     public void question5Validate(View view) {
         if (rb5_3.isChecked()) {
             increment(view);
@@ -203,6 +209,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*Method to validate answers fr question 6*/
+
     public void question6Validate(View view) {
         if (rb6_4.isChecked()) {
             increment(view);
@@ -210,6 +218,8 @@ public class MainActivity extends AppCompatActivity {
             decrement(view);
         }
     }
+
+    /*Method to validate answers for question 7*/
 
     public void question7Validate(View view) {
         answer = editor.getText().toString();
