@@ -15,10 +15,117 @@ public class MainActivity extends AppCompatActivity {
     int correctAnswers = 0;
 
 
+
+
+    CheckBox checkBox1_1;
+    CheckBox checkBox1_2;
+    CheckBox checkBox1_3;
+    CheckBox checkBox1_4;
+    CheckBox checkBox1_5;
+    CheckBox checkBox1_6;
+
+
+    RadioGroup radioGroup2;
+    RadioButton rb2_1;
+    RadioButton rb2_2;
+    RadioButton rb2_3;
+    RadioButton rb2_4;
+
+
+    RadioGroup radioGroup3;
+    RadioButton rb3_1;
+    RadioButton rb3_2;
+    RadioButton rb3_3;
+    RadioButton rb3_4;
+
+
+    CheckBox checkBox4_1;
+    CheckBox checkBox4_2;
+    CheckBox checkBox4_3;
+    CheckBox checkBox4_4;
+
+
+    RadioGroup radioGroup5;
+    RadioButton rb5_1;
+    RadioButton rb5_2;
+    RadioButton rb5_3;
+    RadioButton rb5_4;
+
+
+    RadioGroup radioGroup6;
+    RadioButton rb6_1;
+    RadioButton rb6_2;
+    RadioButton rb6_3;
+    RadioButton rb6_4;
+
+
+    EditText editor;
+    String answer;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*View variable initializations*/
+
+        /*Question 1*/
+        checkBox1_1 = (CheckBox) findViewById(R.id.Question_1_answer_1);
+        checkBox1_2 = (CheckBox) findViewById(R.id.Question_1_answer_2);
+        checkBox1_3 = (CheckBox) findViewById(R.id.Question_1_answer_3);
+        checkBox1_4 = (CheckBox) findViewById(R.id.Question_1_answer_4);
+        checkBox1_5 = (CheckBox) findViewById(R.id.Question_1_answer_5);
+        checkBox1_6 = (CheckBox) findViewById(R.id.Question_1_answer_6);
+
+        /*Question 2*/
+
+        radioGroup2 = (RadioGroup) findViewById(R.id.Question_2_radioGroup);
+        rb2_1 = (RadioButton) findViewById(R.id.Question_2_rb1);
+        rb2_2 = (RadioButton) findViewById(R.id.Question_2_rb2);
+        rb2_3 = (RadioButton) findViewById(R.id.Question_2_rb3);
+        rb2_4 = (RadioButton) findViewById(R.id.Question_2_rb4);
+
+        /*Question 3*/
+
+        radioGroup3 = (RadioGroup) findViewById(R.id.Question_3_radioGroup);
+        rb3_1 = (RadioButton) findViewById(R.id.Question_3_rb1);
+        rb3_2 = (RadioButton) findViewById(R.id.Question_3_rb2);
+        rb3_3 = (RadioButton) findViewById(R.id.Question_3_rb3);
+        rb3_4 = (RadioButton) findViewById(R.id.Question_3_rb4);
+
+        /*Question 4*/
+
+        checkBox4_1 = (CheckBox) findViewById(R.id.Question_4_answer_1);
+        checkBox4_2 = (CheckBox) findViewById(R.id.Question_4_answer_2);
+        checkBox4_3 = (CheckBox) findViewById(R.id.Question_4_answer_3);
+        checkBox4_4 = (CheckBox) findViewById(R.id.Question_4_answer_4);
+
+        /*Question 5*/
+
+        radioGroup5 = (RadioGroup) findViewById(R.id.Question_5_radioGroup);
+        rb5_1 = (RadioButton) findViewById(R.id.Question_5_rb1);
+        rb5_2 = (RadioButton) findViewById(R.id.Question_5_rb2);
+        rb5_3 = (RadioButton) findViewById(R.id.Question_5_rb3);
+        rb5_4 = (RadioButton) findViewById(R.id.Question_5_rb4);
+
+        /*Question 6*/
+
+        radioGroup6 = (RadioGroup) findViewById(R.id.Question_6_radioGroup);
+        rb6_1 = (RadioButton) findViewById(R.id.Question_6_rb1);
+        rb6_2 = (RadioButton) findViewById(R.id.Question_6_rb2);
+        rb6_3 = (RadioButton) findViewById(R.id.Question_6_rb3);
+        rb6_4 = (RadioButton) findViewById(R.id.Question_6_rb4);
+
+        /*Question 7*/
+
+       editor = (EditText) findViewById(R.id.Question_7_textInput);
+     //  answer = editor.getText().toString();
+
+
+
 
 
     }
@@ -37,28 +144,22 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answers for question 1*/
 
     public void question1Validate(View view) {
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.Question_1_answer_1);
-        if (checkBox1.isChecked()) {
+        if (checkBox1_1.isChecked()) {
             increment(view);
         }
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.Question_1_answer_2);
-        if (checkBox2.isChecked()) {
+        if (checkBox1_2.isChecked()) {
             increment(view);
         }
-        CheckBox checkBox3 = (CheckBox) findViewById(R.id.Question_1_answer_3);
-        if (checkBox3.isChecked()) {
+        if (checkBox1_3.isChecked()) {
             increment(view);
         }
-        CheckBox checkBox4 = (CheckBox) findViewById(R.id.Question_1_answer_4);
-        if (checkBox4.isChecked()) {
+        if (checkBox1_4.isChecked()) {
             increment(view);
         }
-        CheckBox checkBox5 = (CheckBox) findViewById(R.id.Question_1_answer_5);
-        if (checkBox5.isChecked()) {
+        if (checkBox1_5.isChecked()) {
             decrement(view);
         }
-        CheckBox checkBox6 = (CheckBox) findViewById(R.id.Question_1_answer_6);
-        if (checkBox6.isChecked()) {
+        if (checkBox1_6.isChecked()) {
             decrement(view);
         }
 
@@ -67,12 +168,7 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answer for question 2*/
 
     public void question2Validate(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.Question_2_radioGroup);
-        RadioButton rb1 = (RadioButton) findViewById(R.id.Question_2_rb1);
-        RadioButton rb2 = (RadioButton) findViewById(R.id.Question_2_rb2);
-        RadioButton rb3 = (RadioButton) findViewById(R.id.Question_2_rb3);
-        RadioButton rb4 = (RadioButton) findViewById(R.id.Question_2_rb4);
-        if (rb3.isChecked()) {
+        if (rb2_3.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -82,12 +178,7 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answer for question 3*/
 
     public void question3Validate(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.Question_3_radioGroup);
-        RadioButton rb1 = (RadioButton) findViewById(R.id.Question_3_rb1);
-        RadioButton rb2 = (RadioButton) findViewById(R.id.Question_3_rb2);
-        RadioButton rb3 = (RadioButton) findViewById(R.id.Question_3_rb3);
-        RadioButton rb4 = (RadioButton) findViewById(R.id.Question_3_rb4);
-        if (rb2.isChecked()) {
+        if (rb3_2.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -95,20 +186,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void question4Validate(View view) {
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.Question_4_answer_1);
-        if (checkBox1.isChecked()) {
+        if (checkBox4_1.isChecked()) {
             increment(view);
         }
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.Question_4_answer_2);
-        if (checkBox2.isChecked()) {
+        if (checkBox4_2.isChecked()) {
             decrement(view);
         }
-        CheckBox checkBox3 = (CheckBox) findViewById(R.id.Question_4_answer_3);
-        if (checkBox3.isChecked()) {
+        if (checkBox4_3.isChecked()) {
             decrement(view);
         }
-        CheckBox checkBox4 = (CheckBox) findViewById(R.id.Question_4_answer_4);
-        if (checkBox4.isChecked()) {
+        if (checkBox4_4.isChecked()) {
             increment(view);
         }
 
@@ -116,12 +203,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void question5Validate(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.Question_5_radioGroup);
-        RadioButton rb1 = (RadioButton) findViewById(R.id.Question_5_rb1);
-        RadioButton rb2 = (RadioButton) findViewById(R.id.Question_5_rb2);
-        RadioButton rb3 = (RadioButton) findViewById(R.id.Question_5_rb3);
-        RadioButton rb4 = (RadioButton) findViewById(R.id.Question_5_rb4);
-        if (rb3.isChecked()) {
+        if (rb5_3.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -129,12 +211,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void question6Validate(View view) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.Question_6_radioGroup);
-        RadioButton rb1 = (RadioButton) findViewById(R.id.Question_6_rb1);
-        RadioButton rb2 = (RadioButton) findViewById(R.id.Question_6_rb2);
-        RadioButton rb3 = (RadioButton) findViewById(R.id.Question_6_rb3);
-        RadioButton rb4 = (RadioButton) findViewById(R.id.Question_6_rb4);
-        if (rb4.isChecked()) {
+        if (rb6_4.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -142,8 +219,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void question7Validate(View view) {
-        EditText editor = (EditText) findViewById(R.id.Question_7_textInput);
-        String answer = editor.getText().toString();
+        answer = editor.getText().toString();
         if (answer.equals("Hulk")) {
             increment(view);
         } else if (answer.equals("hulk")) {
@@ -180,7 +256,7 @@ public class MainActivity extends AppCompatActivity {
     public String ranker(int score) {
         String rank = "";
 
-        if (score == 11) {
+        if (score >= 11) {
             rank = "Ring Legend";
         } else if (score <= 10 && score >= 8) {
             rank = "Heavyweight Champion";
@@ -200,5 +276,5 @@ public class MainActivity extends AppCompatActivity {
         message += "Your rank is: " + rank;
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
-    //TODO Possibly move all view variable declarations above onCreate with initializaions inside onCreate
+
 }
