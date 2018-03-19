@@ -15,8 +15,6 @@ public class MainActivity extends AppCompatActivity {
     int correctAnswers = 0;
 
 
-
-
     CheckBox checkBox1_1;
     CheckBox checkBox1_2;
     CheckBox checkBox1_3;
@@ -61,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editor;
     String answer;
-
-
 
 
     @Override
@@ -121,11 +117,8 @@ public class MainActivity extends AppCompatActivity {
 
         /*Question 7*/
 
-       editor = (EditText) findViewById(R.id.Question_7_textInput);
-     //  answer = editor.getText().toString();
-
-
-
+        editor = (EditText) findViewById(R.id.Question_7_textInput);
+        //  answer = editor.getText().toString();
 
 
     }

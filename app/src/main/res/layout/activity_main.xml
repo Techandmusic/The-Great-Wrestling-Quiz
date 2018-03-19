@@ -435,8 +435,8 @@
             android:layout_marginBottom="@dimen/small"
             android:layout_marginTop="@dimen/medium"
             android:background="@drawable/rounded_corner_button"
-            android:text="@string/buttonText"
-            android:onClick="checkAnswers"/>
+            android:onClick="checkAnswers"
+            android:text="@string/buttonText" />
 
 
     </LinearLayout>
