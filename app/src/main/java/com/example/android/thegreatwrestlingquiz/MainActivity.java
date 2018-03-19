@@ -241,6 +241,7 @@ public class MainActivity extends AppCompatActivity {
         question7Validate(view);
         endMessage(ranker(correctAnswers));
 
+
     }
 
     /*Method to give player a rank based on number of correct answers
@@ -264,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
 
     /*Method to print out toast message with score and rank at end of quiz*/
 
-    public void endMessage(String rank) {
+    public void endMessage(String rank)  {
         String message = "You got " + correctAnswers + " answers correct! ";
         message += "Your rank is: " + rank;
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
