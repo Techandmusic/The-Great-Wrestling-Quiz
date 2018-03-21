@@ -58,4 +58,16 @@
     <string name="buttonText">Submit</string>
     <string name="hintText">Type Answer</string>
 
+    <!--Strings for endMessage method -->
+    <string name="conclusion1">You got&#160;</string>
+    <string name="conclusion2">&#160;answers correct!&#160;</string>
+    <string name="rank_title">Your rank is:&#160;</string>
+
+    <!--Rank Strings -->
+    <string name="rank1">Ring Legend</string>
+    <string name="rank2">Heavyweight Champion</string>
+    <string name="rank3">Mid Card Talent</string>
+    <string name="rank4">Jobber</string>
+
+
 </resources>

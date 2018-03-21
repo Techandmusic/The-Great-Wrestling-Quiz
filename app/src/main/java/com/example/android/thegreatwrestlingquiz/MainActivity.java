@@ -261,13 +261,13 @@ public class MainActivity extends AppCompatActivity {
         String rank = "";
 
         if (score >= 11) {
-            rank = "Ring Legend";
+            rank = getResources().getString(R.string.rank1);
         } else if (score <= 10 && score >= 8) {
-            rank = "Heavyweight Champion";
+            rank = getResources().getString(R.string.rank2);
         } else if (score <= 7 && score >= 5) {
-            rank = "Mid Card Talent";
+            rank = getResources().getString(R.string.rank3);
         } else {
-            rank = "Jobber";
+            rank = getResources().getString(R.string.rank4);
         }
 
         return rank;
@@ -276,8 +276,8 @@ public class MainActivity extends AppCompatActivity {
     /*Method to print out toast message with score and rank at end of quiz*/
 
     public void endMessage(String rank)  {
-        String message = "You got " + correctAnswers + " answers correct! ";
-        message += "Your rank is: " + rank;
+        String message = getResources().getString(R.string.conclusion1) + correctAnswers + getResources().getString(R.string.conclusion2);
+        message += getResources().getString(R.string.rank_title) + rank;
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
