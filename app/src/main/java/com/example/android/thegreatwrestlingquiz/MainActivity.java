@@ -9,6 +9,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity {
 
     /*int to keep track of correct answers*/
@@ -279,6 +282,15 @@ public class MainActivity extends AppCompatActivity {
         String message = getResources().getString(R.string.conclusion1) + correctAnswers + getResources().getString(R.string.conclusion2);
         message += getResources().getString(R.string.rank_title) + rank;
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        // Makes app close automatically after toast is displayed
+        Timer countDown = new Timer();
+        TimerTask quit = new TimerTask() {
+            @Override
+            public void run() {
+                System.exit(0);
+            }
+        };
+        countDown.schedule(quit, 2500);
     }
 
 }
