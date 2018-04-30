@@ -20,46 +20,46 @@ public class MainActivity extends AppCompatActivity {
 
     //View variables for each question
 
-    CheckBox checkBox1_1;
-    CheckBox checkBox1_2;
-    CheckBox checkBox1_3;
-    CheckBox checkBox1_4;
-    CheckBox checkBox1_5;
-    CheckBox checkBox1_6;
+    CheckBox question_1_answer_1;
+    CheckBox question_1_answer_2;
+    CheckBox question_1_answer_3;
+    CheckBox question_1_answer_4;
+    CheckBox question_1_answer_5;
+    CheckBox question_1_answer_6;
 
 
     RadioGroup radioGroup2;
-    RadioButton rb2_1;
-    RadioButton rb2_2;
-    RadioButton rb2_3;
-    RadioButton rb2_4;
+    RadioButton question_2_answer_1;
+    RadioButton question_2_answer_2;
+    RadioButton question_2_answer_3;
+    RadioButton question_2_answer_4;
 
 
     RadioGroup radioGroup3;
-    RadioButton rb3_1;
-    RadioButton rb3_2;
-    RadioButton rb3_3;
-    RadioButton rb3_4;
+    RadioButton question_3_answer_1;
+    RadioButton question_3_answer_2;
+    RadioButton question_3_answer_3;
+    RadioButton question_3_answer_4;
 
 
-    CheckBox checkBox4_1;
-    CheckBox checkBox4_2;
-    CheckBox checkBox4_3;
-    CheckBox checkBox4_4;
+    CheckBox question_4_answer_1;
+    CheckBox question_4_answer_2;
+    CheckBox question_4_answer_3;
+    CheckBox question_4_answer_4;
 
 
     RadioGroup radioGroup5;
-    RadioButton rb5_1;
-    RadioButton rb5_2;
-    RadioButton rb5_3;
-    RadioButton rb5_4;
+    RadioButton question_5_answer_1;
+    RadioButton question_5_answer_2;
+    RadioButton question_5_answer_3;
+    RadioButton question_5_answer_4;
 
 
     RadioGroup radioGroup6;
-    RadioButton rb6_1;
-    RadioButton rb6_2;
-    RadioButton rb6_3;
-    RadioButton rb6_4;
+    RadioButton question_6_answer_1;
+    RadioButton question_6_answer_2;
+    RadioButton question_6_answer_3;
+    RadioButton question_6_answer_4;
 
 
     EditText editor;
@@ -74,56 +74,55 @@ public class MainActivity extends AppCompatActivity {
         /*View variable initializations*/
 
         /*Question 1*/
-        checkBox1_1 = (CheckBox) findViewById(R.id.Question_1_answer_1);
-        checkBox1_2 = (CheckBox) findViewById(R.id.Question_1_answer_2);
-        checkBox1_3 = (CheckBox) findViewById(R.id.Question_1_answer_3);
-        checkBox1_4 = (CheckBox) findViewById(R.id.Question_1_answer_4);
-        checkBox1_5 = (CheckBox) findViewById(R.id.Question_1_answer_5);
-        checkBox1_6 = (CheckBox) findViewById(R.id.Question_1_answer_6);
+        question_1_answer_1 = (CheckBox) findViewById(R.id.Question_1_answer_1);
+        question_1_answer_2 = (CheckBox) findViewById(R.id.Question_1_answer_2);
+        question_1_answer_3 = (CheckBox) findViewById(R.id.Question_1_answer_3);
+        question_1_answer_4 = (CheckBox) findViewById(R.id.Question_1_answer_4);
+        question_1_answer_5 = (CheckBox) findViewById(R.id.Question_1_answer_5);
+        question_1_answer_6 = (CheckBox) findViewById(R.id.Question_1_answer_6);
 
         /*Question 2*/
 
         radioGroup2 = (RadioGroup) findViewById(R.id.Question_2_radioGroup);
-        rb2_1 = (RadioButton) findViewById(R.id.Question_2_rb1);
-        rb2_2 = (RadioButton) findViewById(R.id.Question_2_rb2);
-        rb2_3 = (RadioButton) findViewById(R.id.Question_2_rb3);
-        rb2_4 = (RadioButton) findViewById(R.id.Question_2_rb4);
+        question_2_answer_1 = (RadioButton) findViewById(R.id.Question_2_rb1);
+        question_2_answer_2 = (RadioButton) findViewById(R.id.Question_2_rb2);
+        question_2_answer_3 = (RadioButton) findViewById(R.id.Question_2_rb3);
+        question_2_answer_4 = (RadioButton) findViewById(R.id.Question_2_rb4);
 
         /*Question 3*/
 
         radioGroup3 = (RadioGroup) findViewById(R.id.Question_3_radioGroup);
-        rb3_1 = (RadioButton) findViewById(R.id.Question_3_rb1);
-        rb3_2 = (RadioButton) findViewById(R.id.Question_3_rb2);
-        rb3_3 = (RadioButton) findViewById(R.id.Question_3_rb3);
-        rb3_4 = (RadioButton) findViewById(R.id.Question_3_rb4);
+        question_3_answer_1 = (RadioButton) findViewById(R.id.Question_3_rb1);
+        question_3_answer_2 = (RadioButton) findViewById(R.id.Question_3_rb2);
+        question_3_answer_3 = (RadioButton) findViewById(R.id.Question_3_rb3);
+        question_3_answer_4 = (RadioButton) findViewById(R.id.Question_3_rb4);
 
         /*Question 4*/
 
-        checkBox4_1 = (CheckBox) findViewById(R.id.Question_4_answer_1);
-        checkBox4_2 = (CheckBox) findViewById(R.id.Question_4_answer_2);
-        checkBox4_3 = (CheckBox) findViewById(R.id.Question_4_answer_3);
-        checkBox4_4 = (CheckBox) findViewById(R.id.Question_4_answer_4);
+        question_4_answer_1 = (CheckBox) findViewById(R.id.Question_4_answer_1);
+        question_4_answer_2 = (CheckBox) findViewById(R.id.Question_4_answer_2);
+        question_4_answer_3 = (CheckBox) findViewById(R.id.Question_4_answer_3);
+        question_4_answer_4 = (CheckBox) findViewById(R.id.Question_4_answer_4);
 
         /*Question 5*/
 
         radioGroup5 = (RadioGroup) findViewById(R.id.Question_5_radioGroup);
-        rb5_1 = (RadioButton) findViewById(R.id.Question_5_rb1);
-        rb5_2 = (RadioButton) findViewById(R.id.Question_5_rb2);
-        rb5_3 = (RadioButton) findViewById(R.id.Question_5_rb3);
-        rb5_4 = (RadioButton) findViewById(R.id.Question_5_rb4);
+        question_5_answer_1 = (RadioButton) findViewById(R.id.Question_5_rb1);
+        question_5_answer_2 = (RadioButton) findViewById(R.id.Question_5_rb2);
+        question_5_answer_3 = (RadioButton) findViewById(R.id.Question_5_rb3);
+        question_5_answer_4 = (RadioButton) findViewById(R.id.Question_5_rb4);
 
         /*Question 6*/
 
         radioGroup6 = (RadioGroup) findViewById(R.id.Question_6_radioGroup);
-        rb6_1 = (RadioButton) findViewById(R.id.Question_6_rb1);
-        rb6_2 = (RadioButton) findViewById(R.id.Question_6_rb2);
-        rb6_3 = (RadioButton) findViewById(R.id.Question_6_rb3);
-        rb6_4 = (RadioButton) findViewById(R.id.Question_6_rb4);
+        question_6_answer_1 = (RadioButton) findViewById(R.id.Question_6_rb1);
+        question_6_answer_2 = (RadioButton) findViewById(R.id.Question_6_rb2);
+        question_6_answer_3 = (RadioButton) findViewById(R.id.Question_6_rb3);
+        question_6_answer_4 = (RadioButton) findViewById(R.id.Question_6_rb4);
 
         /*Question 7*/
 
         editor = (EditText) findViewById(R.id.Question_7_textInput);
-
 
 
     }
@@ -142,22 +141,22 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answers for question 1*/
 
     public void question1Validate(View view) {
-        if (checkBox1_1.isChecked()) {
+        if (question_1_answer_1.isChecked()) {
             increment(view);
         }
-        if (checkBox1_2.isChecked()) {
+        if (question_1_answer_2.isChecked()) {
             increment(view);
         }
-        if (checkBox1_3.isChecked()) {
+        if (question_1_answer_3.isChecked()) {
             increment(view);
         }
-        if (checkBox1_4.isChecked()) {
+        if (question_1_answer_4.isChecked()) {
             increment(view);
         }
-        if (checkBox1_5.isChecked()) {
+        if (question_1_answer_5.isChecked()) {
             decrement(view);
         }
-        if (checkBox1_6.isChecked()) {
+        if (question_1_answer_6.isChecked()) {
             decrement(view);
         }
 
@@ -166,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answer for question 2*/
 
     public void question2Validate(View view) {
-        if (rb2_3.isChecked()) {
+        if (question_2_answer_3.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -176,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answer for question 3*/
 
     public void question3Validate(View view) {
-        if (rb3_2.isChecked()) {
+        if (question_3_answer_2.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -186,16 +185,16 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answers for question 4*/
 
     public void question4Validate(View view) {
-        if (checkBox4_1.isChecked()) {
+        if (question_4_answer_1.isChecked()) {
             increment(view);
         }
-        if (checkBox4_2.isChecked()) {
+        if (question_4_answer_2.isChecked()) {
             decrement(view);
         }
-        if (checkBox4_3.isChecked()) {
+        if (question_4_answer_3.isChecked()) {
             decrement(view);
         }
-        if (checkBox4_4.isChecked()) {
+        if (question_4_answer_4.isChecked()) {
             increment(view);
         }
 
@@ -205,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answers for question 5*/
 
     public void question5Validate(View view) {
-        if (rb5_3.isChecked()) {
+        if (question_5_answer_3.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -215,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
     /*Method to validate answers for question 6*/
 
     public void question6Validate(View view) {
-        if (rb6_4.isChecked()) {
+        if (question_6_answer_4.isChecked()) {
             increment(view);
         } else {
             decrement(view);
@@ -235,14 +234,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-
-
-
-
+    
 
     /*Method which checks if answers are correct, and updates score.
-    * To be called when Submit button is clicked*/
+     * To be called when Submit button is clicked*/
 
     public void checkAnswers(View view) {
         question1Validate(view);
@@ -258,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*Method to give player a rank based on number of correct answers
-    * @rank is initialized to empty string and set according to score*/
+     * @rank is initialized to empty string and set according to score*/
 
     public String ranker(int score) {
         String rank = "";
@@ -278,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
 
     /*Method to print out toast message with score and rank at end of quiz*/
 
-    public void endMessage(String rank)  {
+    public void endMessage(String rank) {
         String message = getResources().getString(R.string.conclusion1) + correctAnswers + getResources().getString(R.string.conclusion2);
         message += getResources().getString(R.string.rank_title) + rank;
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
