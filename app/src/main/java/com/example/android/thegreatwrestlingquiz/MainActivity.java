@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         /*Question 7*/
 
         editor = (EditText) findViewById(R.id.Question_7_textInput);
-        //  answer = editor.getText().toString();
+
 
 
     }
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /*Method to validate answers fr question 6*/
+    /*Method to validate answers for question 6*/
 
     public void question6Validate(View view) {
         if (rb6_4.isChecked()) {
